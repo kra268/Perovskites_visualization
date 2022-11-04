@@ -1,0 +1,31 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+data_1 = np.loadtxt('orthoBAND.dat')
+plt.figure(1)
+print(data_1)
+plt.plot(data_1[:,0],data_1[:,1],c = 'royalblue')
+plt.xlim(0,3)
+plt.ylim(-5,5)
+plt.xlabel('Wave Vector',fontstyle='normal', c='black',fontfamily='sans-serif',fontweight='bold')
+plt.ylabel('Energy (eV)',fontstyle='normal', c='black',fontfamily='sans-serif',fontweight='bold')
+plt.title('Orthorhombic',fontweight='bold')
+#plt.xticks([])
+plt.savefig("orthoBAND.png",dpi=300)
+plt.show()
+
+
+data_2 = np.loadtxt('cubicBAND.dat')
+plt.figure(2)
+#print(data_2)
+plt.plot(data_2[:,0],data_2[:,1],c = 'royalblue')
+plt.xlim(0,2.5)
+plt.ylim(-5,5)
+plt.xlabel('Wave Vector',fontstyle='normal', c='black',fontfamily='sans-serif',fontweight='bold')
+plt.ylabel('Energy (eV)',fontstyle='normal', c='black',fontfamily='sans-serif',fontweight='bold')
+#plt.axvline(x=0,label='G',c = 'black')
+#plt.axvline(x=0.5,label='X',c = 'black')
+plt.title('Cubic',fontweight='bold')
+#plt.xticks([])
+plt.savefig("cubicBAND.png",dpi=300)
+plt.show()
