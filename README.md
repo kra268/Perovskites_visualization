@@ -4,3 +4,5 @@ All the *.dat files are named for readability. Example: cubicBAND.dat contains c
 You will need the following packages:
 1)Numpy
 2)Matplotlib
+
+There are two python scripts. plotBAND.py plots the bandstructure for cubic/orthorhombic unit cell. Modify as needed. plotDOS.py plots the partial density of states for the perovskite bulk&surface. Modify as needed.
